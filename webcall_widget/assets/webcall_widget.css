@@ -1,0 +1,292 @@
+@keyframes webcall_widget-pulse {
+    0% {
+        transform: rotate(0deg) scale(0.46) skew(1deg);
+        opacity: .8
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .01
+    }
+}
+
+@-webkit-keyframes webcall_widget-pulse {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.46) skew(1deg);
+        -webkit-opacity: .8
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+        -webkit-opacity: .01
+    }
+}
+
+@-moz-keyframes webcall_widget-pulse {
+    0% {
+        -moz-transform: rotate(0deg) scale(0.46) skew(1deg);
+        opacity: 0.8
+    }
+    100% {
+        -moz-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: 0.01
+    }
+}
+
+@-o-keyframes webcall_widget-pulse {
+    0% {
+        -o-transform: rotate(0deg) scale(0.46) skew(1deg);
+        -o-opacity: .8
+    }
+    100% {
+        -o-transform: rotate(0deg) scale(1) skew(1deg);
+        -o-opacity: .01
+    }
+}
+
+@-ms-keyframes webcall_widget-pulse {
+    0% {
+        -ms-transform: rotate(0deg) scale(0.46) skew(1deg);
+        -ms-opacity: .8
+    }
+    100% {
+        -ms-transform: rotate(0deg) scale(1) skew(1deg);
+        -ms-opacity: .01
+    }
+}
+
+/*TOP AND BOTTOM DESIGN*/
+
+div#webcall_widget_top, div#webcall_widget_bottom {
+    background-color: #FD554D;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 60px;
+    right: 60px;
+}
+
+div#webcall_widget_bottom {
+    top: auto;
+    bottom: 60px;
+}
+
+div#webphone_button_top{
+    top: 0;
+    right: 0;
+    width: 76px;
+    height: 76px;
+    background: url(telephone.png) center center no-repeat;
+    background-size: 88px;
+}
+div#webphone_button_bottom {
+    top: 0;
+    right: 0;
+    width: 76px;
+    height: 76px;
+    background: url(WebCam.png) center center no-repeat;
+    background-size: 88px;
+}
+div#webphone_button_bottom {
+    top: auto;
+    bottom: 0;
+}
+
+div#pulse-holder_top {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+}
+
+div#pulse-rays_top, div#pulse-rays_bottom {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0.01;
+    width: 152px;
+    height: 152px;
+    top: -40px;
+    right: -40px;
+    border: 2px solid #FD554D;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation: webcall_widget-pulse 3s linear infinite;
+    -moz-animation: webcall_widget-pulse 3s linear infinite;
+    -o-animation: webcall_widget-pulse 3s linear infinite;
+    -ms-animation: webcall_widget-pulse 3s linear infinite;
+    animation: webcall_widget-pulse 3s linear infinite;
+}
+
+div#pulse-rays_bottom {
+    top: auto;
+    bottom: -40px;
+}
+
+div#pulse-rays1_top, div#pulse-rays1_bottom {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0.01;
+    width: 152px;
+    height: 152px;
+    top: -40px;
+    right: -40px;
+    border: 2px solid #FD554D;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation: webcall_widget-pulse 3s linear infinite;
+    -moz-animation: webcall_widget-pulse 3s linear infinite;
+    -o-animation: webcall_widget-pulse 3s linear infinite;
+    -ms-animation: webcall_widget-pulse 3s linear infinite;
+    animation: webcall_widget-pulse 3s linear infinite;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+div#pulse-rays1_bottom {
+    top: auto;
+    bottom: -40px;
+}
+
+div#webcall_widget_top:hover, div#webcall_widget_bottom:hover {
+    background-color: #1AC604 !important;
+}
+
+div#webcall_widget_top:hover div#pulse-rays_top, div#webcall_widget_bottom:hover div#pulse-rays_bottom {
+    animation: webcall_widget-pulse 1s linear infinite;
+    border-color: #1AC604 !important;
+}
+
+div#webcall_widget_top:hover div#pulse-rays1_top, div#webcall_widget_bottom:hover div#pulse-rays1_bottom {
+    animation: webcall_widget-pulse 1s linear infinite;
+    animation-delay: 0.5s;
+    border-color: #1AC604 !important;
+}
+
+/*TOP RIGHT CORNER DESIGN*/
+
+div#webcall_widget_top-corner {
+    background-color: #FD554D;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border-bottom-left-radius: 95%;
+}
+
+div#webphone_button_top-corner {
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 65px;
+    background: url(telephone.png) -7px -11px no-repeat;
+    background-size: 85px;
+    overflow: visible;
+}
+
+div#pulse-holder_top-corner {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+}
+
+div#pulse-rays_top-corner {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0.01;
+    width: 150px;
+    height: 150px;
+    top: -45px;
+    right: -45px;
+    border-bottom: 2px solid #FD554D;
+    border-left: 2px solid #FD554D;
+    -webkit-bottom-left-radius: 85%;
+    -moz-border-bottom-left-radius: 85%;
+    -o-border-bottom-left-radius: 85%;
+    -ms-border-bottom-left-radius: 85%;
+    border-bottom-left-radius: 85%;
+    -webkit-animation: webcall_widget-pulse 3s linear infinite;
+    -moz-animation: webcall_widget-pulse 3s linear infinite;
+    -o-animation: webcall_widget-pulse 3s linear infinite;
+    -ms-animation: webcall_widget-pulse 3s linear infinite;
+    animation: webcall_widget-pulse 3s linear infinite;
+}
+
+div#pulse-rays1_top-corner {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0.01;
+    width: 150px;
+    height: 150px;
+    top: -45px;
+    right: -45px;
+    border-bottom: 2px solid #FD554D;
+    border-left: 2px solid #FD554D;
+    -webkit-bottom-left-radius: 85%;
+    -moz-border-bottom-left-radius: 85%;
+    -o-border-bottom-left-radius: 85%;
+    -ms-border-bottom-left-radius: 85%;
+    border-bottom-left-radius: 85%;
+    -webkit-animation: webcall_widget-pulse 3s linear infinite;
+    -moz-animation: webcall_widget-pulse 3s linear infinite;
+    -o-animation: webcall_widget-pulse 3s linear infinite;
+    -ms-animation: webcall_widget-pulse 3s linear infinite;
+    animation: webcall_widget-pulse 3s linear infinite;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+div#webcall_widget_top-corner:hover {
+    background-color: #1AC604 !important;
+}
+
+div#webcall_widget_top-corner:hover div#pulse-rays_top-corner {
+    animation: webcall_widget-pulse 1s linear infinite;
+    border-color: #1AC604 !important;
+}
+
+div#webcall_widget_top-corner:hover div#pulse-rays1_top-corner {
+    animation: webcall_widget-pulse 1s linear infinite;
+    animation-delay: 0.5s;
+    border-color: #1AC604 !important;
+}
+
+/*TOP RIGHT CORNER DESIGN*/
+
+div#webcall_widget_middle {
+    background-color: #FD554D;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: -5px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
+}
+
+div#webphone_button_middle {
+    width: 60px;
+    height: 60px;
+    background: url(WebCam.png) center center no-repeat;
+    background-size: 65px;
+    padding-top: 5px;
+}
+
+div#webcall_widget_middle:hover {
+    background-color: #1AC604 !important;
+}
